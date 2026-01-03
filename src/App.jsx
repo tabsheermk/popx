@@ -19,9 +19,9 @@ function App() {
   <Router>
     <Routes>
       <Route path="/register" element={<RegisterPage formData={formData} setFormData={setFormData} />}/>
-      <Route path="/login" element={<LoginPage />} />
+      <Route path="/login" element={<LoginPage formData={formData}/>} />
       <Route path="/" element={<Home />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboard" element={<Dashboard formData={formData}/>} />
     </Routes>
     </Router>
   );
